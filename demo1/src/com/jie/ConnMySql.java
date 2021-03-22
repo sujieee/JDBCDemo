@@ -22,7 +22,7 @@ public class ConnMySql {
                 //3.创建一个Statement对象
                 Statement statement = connection.createStatement();
                 //4.执行查询sql语句
-                ResultSet rs = statement.executeQuery("select s.*,t.tname from student s,teacher t where  t.id=s.teacher_id");
+                ResultSet rs = statement.executeQuery("select s.*,t.name from student s,teacher t where  t.id=s.teacher_id");
         ) {
             //如果移动之后ResultSet记录指针依然指向有效行，则next()方法返回true
             while (rs.next()) {
